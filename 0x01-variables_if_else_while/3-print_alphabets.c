@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Marks the entry point of this program.
+ * main - Marks the begining of a program.
  *
- * Return: 0, returns value 0 if program runs successfully
+ * Return: 0, means the program has run successfully
  */
 int main(void)
 {
@@ -12,9 +12,8 @@ char alphabet[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	for (x = 0; x < 52; x++)
 	{
-	    putchar(alphabet[x]);
+		putchar(alphabet[x]);
 	}
 	putchar('\n');
-
 	return (0);
 }

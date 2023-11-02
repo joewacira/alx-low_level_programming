@@ -48,7 +48,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	for (j = num_index, k = dest_index; j >= 0; j--, k--)
 	{
 	mul = (n - '0') * (num[j] - '0') + mulrem;
- 	mulrem = mul / 10;
+	mulrem = mul / 10;
 	add = (dest[k] - '0') + (mul % 10) + addrem;
 	addrem = add / 10;
 	dest[k] = add % 10 + '0';
@@ -120,7 +120,7 @@ void init(char *str, int l)
 int main(int argc, char *argv[])
 {
 	int l1, l2, ln, ti, i;
- 	char *a;
+	char *a;
 	char *t;
 	char e[] = "Error\n";
 
@@ -133,7 +133,7 @@ int main(int argc, char *argv[])
 	for (l1 = 0; argv[1][l1]; l1++)
 	;
 	for (l2 = 0; argv[2][l2]; l2++)
- 	;
+	;
 	ln = l1 + l2 + 1;
 	a = malloc(ln * sizeof(char));
 	if (a == NULL)
@@ -152,7 +152,7 @@ int main(int argc, char *argv[])
 	_putchar(e[ti]);
 	free(a);
 	exit(98);
- 	}
+	}
 	}
 	_print(a, ln - 1);
 	return (0);

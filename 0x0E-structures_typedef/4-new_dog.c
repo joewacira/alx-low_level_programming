@@ -66,7 +66,7 @@ while (src[len] != '\0')
  *
  * Return: (pointer to the new dog) Success, else NULL
  */
-	dog_t *new_dog(char *name, float age, char *owner);
+	dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int len1, len2;

@@ -182,7 +182,7 @@ void print_osabi(unsigned char *e_ident)
 }
 
 /**
- * print_abi - func prints the ABI version of an ELF header.
+ * print_abi - Prints the ABI version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF ABI version.
  */
 void print_abi(unsigned char *e_ident)
@@ -192,9 +192,9 @@ void print_abi(unsigned char *e_ident)
 }
 
 /**
- * print_type - func prints the type of ELF header.
- * @e_type: ELF type.
- * @e_ident: pointer to an array containing the ELF class.
+ * print_type - Prints the type of an ELF header.
+ * @e_type: The ELF type.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_type(unsigned int e_type, unsigned char *e_ident)
 {
@@ -226,9 +226,9 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 }
 
 /**
- * print_entry - func prints the entry point of ELF header.
- * @e_entry: Address of the ELF entry point.
- * @e_ident: Pointer to an array containing ELF class.
+ * print_entry - Prints the entry point of an ELF header.
+ * @e_entry: The address of the ELF entry point.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
@@ -249,9 +249,10 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 }
 
 /**
- * close_elf - func closes an ELF file.
- * @elf: file descriptor of ELF file.
- * Description: If the file can not be closed - exit code 98.
+ * close_elf - Closes an ELF file.
+ * @elf: The file descriptor of the ELF file.
+ *
+ * Description: If the file cannot be closed - exit code 98.
  */
 void close_elf(int elf)
 {
@@ -264,13 +265,15 @@ void close_elf(int elf)
 }
 
 /**
- * main - func displays the info contained in the
- * ELF header at the start of an ELF file.
- * @argc: num of arguments supplied to the program.
- * @argv: an array to pointers to the arguments.
- * Return: 0 (success.)
+ * main - Displays the information contained in the
+ *        ELF header at the start of an ELF file.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
+ *
+ * Return: 0 on success.
+ *
  * Description: If the file is not an ELF File or
- * the func fails - exit code 98.
+ *              the function fails - exit code 98.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {

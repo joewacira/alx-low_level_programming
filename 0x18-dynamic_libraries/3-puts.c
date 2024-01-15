@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+/**i
  * _puts - func prints str, followed by a new line,
  * @str: pointer to the string to print
  * Return: void
@@ -14,5 +14,5 @@ while (str[index])
 	_putchar(str[index]);
 	index++;
 }
-_putchar('\n');
+	_putchar('\n');
 }
